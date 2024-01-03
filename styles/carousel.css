@@ -1,0 +1,37 @@
+.carousel-button-left,
+.carousel-button-right {
+  position: absolute;
+  /* width: 10px; */
+  background: #0000;
+}
+.carousel-button-left {
+  left: 10px;
+  transform: rotate(180deg);
+}
+.carousel-button-right {
+  right: 10px;
+}
+
+@media (width > 700) {
+  .carousel-button-left,
+  .carousel-button-right {
+    display: none;
+  }
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: 20px;
+}
+.indicator {
+  width: 3px;
+  height: 12px;
+  border-radius: 99px;
+  background-color: white;
+}
+.disabled {
+  opacity: 0.5;
+}

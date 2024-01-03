@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="public/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/homeResponsive.css" />
+  <title>Prueba técnica</title>
+  </head>
+  <body>
+    <div class="bg">
+      <img src="./public/bg-1.svg" alt="bg-1" />
+      <img src="./public/bg-2.svg" alt="bg-2" />
+    </div>
+    <header>
+      <img src="./public/logo.svg" alt="logo" />
+      <section class="header-banner_ctn">
+        <div class="header-banner">
+          <h2>Factoring Independiente</h2>
+          <p>Obtén la liquidez inmediata que tu negocio necesita</p>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-ctn">
+      <section class="info">
+        <img src="./public/image.png" alt="info-image" />
+        <ul id="features-ctn">
+          <li>
+            <img src="./public/list-ckeck.svg" alt="list-ckeck" />
+            <p>
+              <span>Desembolsos al 100%</span> del cobro de tus facturas el
+              mismo día (*).
+            </p>
+          </li>
+          <li>
+            <img src="./public/list-ckeck.svg" alt="list-ckeck" />
+            <p>
+              Aceptamos facturas <span>sin montos mínimos</span>, hasta un plazo
+              máximo de <span>180 días</span> calendario.
+            </p>
+          </li>
+        </ul>
+        <p class="disclaimer disclaimer-desktop">
+          (*) El otorgamiento del producto está sujeto a evaluación. Los
+          desembolsos se realizan en días hábiles.
+        </p>
+      </section>
+      <form>
+        <p><span>Simula tu adelanto</span> y conoce la mejor oferta que tenemos para ti.</p>
+        <input type="number" id="dni" placeholder="DNI" required />
+        <input type="number" id="phone" placeholder="Celular" required />
+        <input type="email" id="email" placeholder="E-mail" required/>
+        <label>
+          <input type="checkbox" name="verification" required />
+          <span class="checkmark"></span>
+          <p>
+            He leído y acepto la
+            <a
+              href="https://www.banbif.com.pe/Portals/0/PDF/CONSENTIMIENTO-DE-DATOS-PERSONALES.pdf"
+              >Cláusula de información y consentimiento para tratamiento datos
+              personales</a
+            >.
+          </p>
+        </label>
+        <button><a>Comenzar</a><span>Simular</span></button>
+        <p class="disclaimer disclaimer-mobile">
+          (*) El otorgamiento del producto está sujeto a evaluación. - Los
+          desembolsos se realizan en días hábiles.
+        </p>
+      </form>
+    </main>
+  </body>
+  <script type="application/javascript" src="./js/carousel.js"></script>
+  <script type="application/javascript" src="./js/form.js"></script>
+</html>

@@ -1,0 +1,96 @@
+@import "home.css";
+@import "carousel.css";
+
+@media (width <= 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+
+    margin: 1rem 0 0;
+    & .info {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      & > img {
+        display: none;
+      }
+
+      & ul {
+        background: linear-gradient(
+          270deg,
+          #0370f5 15.24%,
+          #20a6ff 71.77%,
+          #20a6ff 111.26%
+        );
+        padding: 2em 1em;
+        margin: 0;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 100%);
+
+        width: 100%;
+
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 2rem;
+      }
+      & ul::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      & li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 2.5rem 2.5rem;
+        scroll-snap-align: center;
+      }
+      & li p,
+      li span {
+        color: white;
+      }
+      & li img {
+        position: relative;
+        background-color: white;
+        padding: 5px;
+        border-radius: 99px;
+        width: 2rem;
+        height: 2rem;
+        left: 0;
+      }
+    }
+
+    & .disclaimer-desktop {
+      display: none;
+    }
+
+    & .disclaimer-mobile {
+      display: block;
+    }
+
+    & form {
+      margin: 2rem;
+
+      & p {
+        & span {
+          font-size: x-large;
+          font-weight: bolder;
+        }
+      }
+
+      & button {      
+        & a{
+          display: none;
+        }
+        & span{
+          display: inline-block;
+        }
+    }
+    }
+  }
+}
