@@ -15,9 +15,9 @@ form.addEventListener("submit", event => {
   }
 
   // Validacion teléfono
-  if (phone.length !== 9) {
-    alert("Número de celular debe tener 9 dígitos")
-    return
+  if (phone.length !== 9 || phone.charAt(0) !== '9') {
+    alert("Número de celular debe tener 9 dígitos y el primer dígito debe ser nueve")
+    return;
   }
 
   //Validacion correo
